@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export default function NavBar() {
@@ -16,7 +17,14 @@ export default function NavBar() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Title */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center space-x-3">
+            <Image
+              src="/logo.png"
+              alt="Anchored By God's Word Logo"
+              width={128}
+              height={128}
+              className="w-16 h-16"
+            />
             <Link href="/" className="text-2xl font-bold text-anchor-blue hover:text-muted-blue transition duration-200">
               Anchored By God&apos;s Word
             </Link>
