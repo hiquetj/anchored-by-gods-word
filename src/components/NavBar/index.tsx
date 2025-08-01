@@ -9,11 +9,11 @@ export default function NavBar() {
 
   const getLinkClass: (path: string) => string = (path: string) =>
     pathname === path
-      ? 'text-muted-blue font-semibold border-b-2 border-muted-blue pb-1'
+      ? 'text-anchor-blue font-semibold border-b-2 border-anchor-blue pb-1'
       : 'text-anchor-blue hover:text-muted-blue hover:border-b-2 hover:border-muted-blue pb-1 transition duration-200'
 
   return (
-    <nav className="bg-navy-dark text-pure-white shadow-lg w-full sticky top-0 z-10">
+    <nav className="bg-navy-dark shadow-lg w-full sticky top-0 z-10">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Title */}

@@ -1,4 +1,4 @@
-import { BlogPost } from 'types'
+import { BlogPost } from '@/types'
 
 const mockBlogPosts: BlogPost[] = [
   {

@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { getBlogPosts } from 'lib/blog'
-import { BlogPost } from 'types'
+import { getBlogPosts } from '@/lib/blog'
+import { BlogPost } from '@/types'
 
 export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>([])
